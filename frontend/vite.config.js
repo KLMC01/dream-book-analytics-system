@@ -33,7 +33,6 @@ export default defineConfig({
 
         start_url: '/',
 
-
         icons: [
 
           {
@@ -61,7 +60,6 @@ export default defineConfig({
   ],
 
 
-
   // Production build settings
   build: {
 
@@ -70,7 +68,6 @@ export default defineConfig({
     sourcemap: false
 
   },
-
 
 
   // Local development
@@ -85,6 +82,7 @@ export default defineConfig({
 
       '/api': {
 
+        // Local Django backend during development
         target: 'http://127.0.0.1:8000',
 
         changeOrigin: true,
