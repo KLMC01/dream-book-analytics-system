@@ -1,0 +1,46 @@
+<html>
+<body>
+<div class="watermark"><img src="file://{{logo}}"></div>
+
+<header>
+<img src="file://{{logo}}">
+Dream Book Shop Analytics
+</header>
+
+<section class="cover">
+<img class="cover-logo" src="file://{{logo}}">
+<h1>{{title}}</h1>
+<h2>Professional Analysis Report</h2>
+<p>{{filename}} | {{date}}</p>
+</section>
+
+<h1>Executive Summary</h1>
+<div class="cards">
+{% for s in summary %}
+<div class="card">{{s.label}}<b>{{s.value}}</b></div>
+{% endfor %}
+</div>
+
+<p>{{interpretation}}</p>
+
+<h1>Analysis Findings</h1>
+{% if chart %}
+<img class="chart" src="file://{{chart}}">
+{% endif %}
+
+{% if table %}
+<h1>Detailed Data</h1>
+<table>
+<tr>{% for h in headers %}<th>{{h}}</th>{% endfor %}</tr>
+{% for row in table %}
+<tr>{% for h in headers %}<td>{{row[h]}}</td>{% endfor %}</tr>
+{% endfor %}
+</table>
+{% endif %}
+
+<h1>Recommendations</h1>
+<ul>{% for r in recommendations %}<li>{{r}}</li>{% endfor %}</ul>
+
+<footer>Dream Book Shop Analytics</footer>
+</body>
+</html>

@@ -1,0 +1,22 @@
+DREAM BOOK SHOP ANALYTICS - START HERE
+======================================
+
+WINDOWS QUICK START
+
+1. Install Python 3.11+ from python.org. During installation tick "Add Python to PATH".
+2. Install Node.js 20+ from nodejs.org.
+3. Install VS Code.
+4. Open this folder in VS Code.
+5. Open Terminal > New Terminal.
+6. Run: setup_windows.bat
+7. Wait until setup completes.
+8. Run: start_all_windows.bat
+9. Open: http://localhost:5173
+
+If you want to understand each command instead of using the batch files, open README.md.
+
+IMPORTANT
+- Django backend runs at http://127.0.0.1:8000
+- React frontend runs at http://localhost:5173
+- Keep both running while using the application.
+- The sample Dataset Books.csv loads automatically.

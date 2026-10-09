@@ -1,0 +1,18 @@
+@page{size:A4;margin:18mm;}
+body{font-family:Arial;color:#172033;line-height:1.5;}
+header{height:30px;border-bottom:2px solid #2563eb;font-weight:bold;}
+header img{height:24px;}
+.watermark{position:fixed;top:35%;left:25%;opacity:.025;}
+.watermark img{width:300px;}
+.cover{text-align:center;padding:50px 0 20px;}
+.cover-logo{width:110px;}
+h1{color:#102a43;margin-top:25px;}
+h2{color:#2563eb;}
+.cards{display:flex;gap:12px;flex-wrap:wrap;}
+.card{background:#eff6ff;padding:12px;border-left:4px solid #2563eb;}
+.card b{display:block;font-size:20px;}
+.chart{width:90%;display:block;margin:20px auto;}
+table{width:100%;border-collapse:collapse;}
+th{background:#102a43;color:white;padding:8px;}
+td{padding:7px;border-bottom:1px solid #ccc;}
+footer{font-size:10px;color:#64748b;margin-top:20px;}
